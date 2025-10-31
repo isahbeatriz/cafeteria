@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pedido | Cafeteria Aroma</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Faça seu Pedido</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <form id="form-pedido">
+    <label for="nome">Seu nome:</label>
+    <input type="text" id="nome" name="nome" required />
+  
+    <fieldset>
+      <legend>Escolha seus produtos e quantidades:</legend>
+  
+      <div class="produto">
+        <label>Café Espresso — R$6,00</label>
+        <input type="number" name="espresso" data-preco="6" min="0" value="0" />
+      </div>
+  
+      <div class="produto">
+        <label>Capuccino — R$8,00</label>
+        <input type="number" name="capuccino" data-preco="8" min="0" value="0" />
+      </div>
+  
+      <div class="produto">
+        <label>Latte — R$9,00</label>
+        <input type="number" name="latte" data-preco="9" min="0" value="0" />
+      </div>
+  
+      <div class="produto">
+        <label>Bolo de Cenoura — R$7,00</label>
+        <input type="number" name="bolo" data-preco="7" min="0" value="0" />
+      </div>
+  
+      <div class="produto">
+        <label>Cookie de Chocolate — R$5,00</label>
+        <input type="number" name="cookie" data-preco="5" min="0" value="0" />
+      </div>
+    </fieldset>
+  
+    <p><strong>Total: R$<span id="total">0,00</span></strong></p>
+  
+    <button type="submit" class="botao-animado">✅ Enviar Pedido</button>
+  </form>
+  
+      
+       
+
+
+      </form>
+      
